@@ -21,7 +21,7 @@ def run_ticket_sale():
         try:
             # Input: Prompting user for ticket count
             print(f"\nTickets currently available: {total_tickets}")
-            buy_count = int(input("How many tickets would you like to purchase? "))
+            buy_count = int(input("How many tickets do you want? "))
 
             # If Statement: Utilizing the validation function
             if validate_purchase(buy_count, total_tickets):
