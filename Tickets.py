@@ -12,7 +12,7 @@ def validate_purchase(requested, remaining):
 def run_ticket_sale():
     """Function 2: Manages the sales loop, inputs, and accumulators."""
     total_tickets = 10  # Total inventory
-    total_buyers = 0  # Accumulator for total buyers
+    total_customers = 0  # Accumulator for total buyers
 
     print("Welcome to the Cinema Ticket Pre-Sale!")
 
@@ -26,7 +26,7 @@ def run_ticket_sale():
             # If Statement: Utilizing the validation function
             if validate_purchase(buy_count, total_tickets):
                 total_tickets -= buy_count  # Decrement inventory
-                total_buyers += 1  # Increment buyer accumulator
+                total_customers += 1  # Increment buyer accumulator
                 print(f"Purchase confirmed! {total_tickets} tickets remaining.")
 
         except ValueError:
@@ -35,7 +35,7 @@ def run_ticket_sale():
     # Output: Final display once loop finishes
     print("\n" + "*" * 30)
     print("Pre-sale complete! All tickets sold.")
-    print(f"Total number of buyers: {total_buyers}")
+    print(f"Total number of buyers: {total_customers}")
     print("*" * 30)
 
 
