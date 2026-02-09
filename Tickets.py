@@ -11,7 +11,7 @@ def validate_purchase(requested, remaining):
 
 def run_ticket_sale():
     """Function 2: Manages the sales loop, inputs, and accumulators."""
-    total_tickets = 20  # Total inventory
+    total_tickets = 10  # Total inventory
     total_buyers = 0  # Accumulator for total buyers
 
     print("Welcome to the Cinema Ticket Pre-Sale!")
