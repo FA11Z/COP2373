@@ -53,4 +53,4 @@ if final_score > 0:
     # Convert list to a string to look nicer when printing
     print(f"Trigger words found: {', '.join(found_words)}")
 else:
-    print("No spam keywords detected.")
+    print("No spam keywords detected")
